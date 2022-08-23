@@ -32,7 +32,7 @@ This will get your domain approved. See the
 
 ## Example
 
-This is a basic example which shows you how to use this package. To know more about options to customise editor and update on client, check out the complete documentation of [ShinyEditor](https://www.listendata.com/2021/03/shinyeditor-rich-text-editor-in-shiny.html)
+This is a basic example which shows you how to use this package. To know more about options to customise editor and update on client, check out the **complete documentation of** [ShinyEditor](https://www.listendata.com/2021/03/shinyeditor-rich-text-editor-in-shiny.html)
 
 ``` r
 library(shiny)
