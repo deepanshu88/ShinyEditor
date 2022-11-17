@@ -266,9 +266,8 @@ update_editor <- function(selector,
 
 
 editor_text <- function (selector, asis = FALSE, inputId, as_fn = FALSE, session = shiny::getDefaultReactiveDomain()) {
-  browser()
   .jscode <- paste0(
-    "debugger;
+    "
     var editor = tinyMCE.get(",
     "'",
     ifelse(asis, selector, session$ns(selector)),
