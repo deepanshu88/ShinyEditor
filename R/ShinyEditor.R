@@ -216,6 +216,6 @@ UpdateEditor <- function(session,
 #' shinyApp(ui = ui, server = server)
 
 editorText <- function (session, editorid, outputid) {
-  session$sendCustomMessage(type = "HTMLText", list(jscode = paste0("Shiny.setInputValue(", "'", outputid, "', tinyMCE.get(", "'", editorid, "'", 
+  session$sendCustomMessage(type = "HTMLText", list(jscode = paste0("Shiny.setInputValue(", "'", outputid, "', tinyMCE.get(", "'", editorid, "'",
                                                                     ").getContent(), {priority: 'event'});")))
 }

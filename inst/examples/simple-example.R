@@ -9,23 +9,23 @@ ui <- fluidPage(
   titlePanel("HTML Generator"),
 
   # Text Input 1
-fluidRow(
-  column(
-    width = 6,
-    editor('textcontent'),
-    br(),
-    actionButton(
-      "generatehtml",
-      "Generate HTML Code",
-      icon = icon("code"),
-      class = "btn-primary"
-    )),
+  fluidRow(
+    column(
+      width = 6,
+      editor('textcontent'),
+      br(),
+      actionButton(
+        "generatehtml",
+        "Generate HTML Code",
+        icon = icon("code"),
+        class = "btn-primary"
+      )),
 
-  column(
-    width = 6,
-    tags$pre(textOutput("rawText"))
+    column(
+      width = 6,
+      tags$pre(textOutput("rawText"))
+    )
   )
-)
 
 )
 

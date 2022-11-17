@@ -13,7 +13,7 @@ ui <- fluidPage(
     column(
       width = 6,
       editor('textcontent', text = "Sample Text",
-      options = "branding: false,
+             options = "branding: false,
              height: 300,
              plugins: ['lists', 'table', 'link', 'image', 'code'],
              toolbar1: 'bold italic forecolor backcolor | formatselect fontselect fontsizeselect | alignleft aligncenter alignright alignjustify',
