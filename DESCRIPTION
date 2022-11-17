@@ -13,7 +13,6 @@ Imports:
     rlang,
     shiny,
     shinyjs,
-    stringr,
     UU
 Remotes:
   yogat3ch/UU
