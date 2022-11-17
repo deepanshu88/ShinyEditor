@@ -1,17 +1,24 @@
 Package: ShinyEditor
 Type: Package
 Title: HTML Editor
-Version: 0.1.0
-Author: person("Deepanshu","Bhalla",email="deepanshu88.us@gmail.com",role=c("aut"),comment="Original creator")
-Maintainer: Deepanshu Bhalla <deepanshu88.us@gmail.com>
+Version: 1.0.0
+Author: c(person("Stephen", "Holsenbeck", email = "sholsen@alumni.emory.edu", role = c("ctb", "aut", "cre")), person("Deepanshu","Bhalla",email="deepanshu88.us@gmail.com",role=c("aut"),comment="Original creator"))
+Maintainer: Stephen Holsenbeck <sholsen@alumni.emory.edu>
 Description: HTML Editor in Shiny App via tiny MCE
 License: GPL-2
 Depends:
     R (>= 3.1)
 Imports: 
-    shiny
+    jsonlite,
+    rlang,
+    shiny,
+    shinyjs,
+    stringr,
+    UU
+Remotes:
+  yogat3ch/UU
 Encoding: UTF-8
-RoxygenNote: 7.1.1
+RoxygenNote: 7.2.1
 Roxygen: list(markdown = TRUE)
-URL: https://github.com/deepanshu88/ShinyEditor/
-BugReports: https://github.com/deepanshu88/ShinyEditor/issues/
+URL: https://github.com/yogat3ch/ShinyEditor/
+BugReports: https://github.com/yogat3ch/ShinyEditor/issues/
