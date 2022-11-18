@@ -121,7 +121,7 @@ editor_server <- function(selector, asis = FALSE, options = NULL, inputId, sessi
   init_chr <- jsonlite::toJSON(init, auto_unbox = TRUE, pretty = TRUE, json_verbatim = TRUE)
 
   shiny::isolate({
-    if (!selector %in% se_env$init_ids) {
+    if (!.selector %in% se_env$init_ids) {
       #TODO Add an event listener that watches for compositionend and calls the custom code to save the input constantly
       shinyjs::runjs(paste0("tinymce.init(",init_chr,");"))
       assign("init_ids", c(se_env$init_ids, init$selector), envir = se_env)
